@@ -10,7 +10,7 @@ void divide (double **a, int n, int i, double c)
     }
 }
 
-void divide (double **a, int n, int i1, int i2, double c)  
+void substract (double **a, int n, int i1, int i2, double c)  
 {
     for (int j = 0; j < n+1; j++)
     {
