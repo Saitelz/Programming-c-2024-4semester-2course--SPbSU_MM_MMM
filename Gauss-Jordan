@@ -1,0 +1,110 @@
+#include <iostream>
+using namespace std;
+
+
+void divide (double **a, int n, int i, double c)  
+{
+    for (int j = 0; j < n+1; j++)
+    {
+        a[i][j] /= c;
+    }
+}
+
+void divide (double **a, int n, int i1, int i2, double c)  
+{
+    for (int j = 0; j < n+1; j++)
+    {
+        a[i2][j] -= a[i1][j]*c;
+    }
+}
+
+void print (double **a, int n)
+{
+    for (int i=0; i<n; ++i)
+     {
+         for (int j=0; j<n+1; ++j)
+                 cout << ar[i][j]<<"  ";
+          cout << endl;
+     }
+}
+ 
+int main()
+{
+    int n=2;   
+    double **ar;
+    ar = new double * [n];
+    
+    divide(ar,n,1,a[1][1]);
+    
+    for (int i=0; i<n; ++i)
+   ar[i]=new double [n+1];
+
+    for (int i=0; i<n; ++i)
+      for (int j=0; j<n+1; ++j)
+                //cout << ar[i][j]<<"  ";
+                cin>>ar[i][j];
+                
+   for (int i=0; i<n; ++i)
+     {
+         for (int j=0; j<n+1; ++j)
+                 cout << ar[i][j]<<"  ";
+          cout << endl;
+     }
+     
+    
+    
+/*
+    int ar[10];
+   float ar[10];
+   
+   int n = 2;
+   int * p = new int [n];
+   
+    for (int i=0; i<n; ++i)
+    cout << p[i];
+    
+     for (int i=0; i<n; ++i)
+    cout << *(p+i);
+    
+  for (int i=0; i<n; ++i)
+   cin >> p[i];
+     
+ 
+   
+const int s1=2;
+const int s2=3;
+int ar[2][3] = {1,2,3,4,5,6};
+   // cin>>ar[0][0];  cout << ar[0][1];
+*/    
+ /*
+ 
+int n=2;   
+double **ar;
+ar = new double * [n];
+
+//ar[0]=new double [n+1];
+
+//...
+//ar[n-1]=new double [n+1];  
+
+for (int i=0; i<n; ++i)
+   ar[i]=new double [n+1];
+
+
+
+    
+    for (int i=0; i<n; ++i)
+      for (int j=0; j<n+1; ++j)
+                //cout << ar[i][j]<<"  ";
+                cin>>ar[i][j];
+                
+   for (int i=0; i<n; ++i)
+     {
+         for (int j=0; j<n+1; ++j)
+                 cout << ar[i][j]<<"  ";
+          cout << endl;
+     }
+                
+   */  
+    return 0;
+}
