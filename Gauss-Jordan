@@ -23,11 +23,36 @@ void print (double **a, int n)
     for (int i=0; i<n; ++i)
      {
          for (int j=0; j<n+1; ++j)
-                 cout << ar[i][j]<<"  ";
+                 cout << a[i][j]<<"  ";
           cout << endl;
      }
 }
- 
+
+void transform (double **a, int n)
+{
+    for (int j=0; j<n; ++i)
+    {
+        maxA = 0;
+        tmp[n] = 0;
+        
+        for (int i=0; i<n; ++i)
+        {
+           if (a[i][j] >= maxA)
+                 maxA = a[i][j];
+        }
+
+        for (int i=0; i<n; ++i)
+        {
+           if (a[i][j] = maxA)
+           {
+                 tmp = a[1][j];
+                 a[1][j] = a[i][j];
+                 a[i][j] = tmp;
+           }
+        }
+
+        
+    }
 int main()
 {
     int n=2;   
